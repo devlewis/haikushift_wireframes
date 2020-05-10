@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HaikuForm Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav role="navigation">Haiku Shift</nav>
+    <main role="main">
+        <div class="required_box">
+            <h1>Haiku Survey</h1>
+  
+            <label for="time_place">Choose Time or Place:</label>
+            <select
+              onChange=""  
+              name="time_place"
+              id="time_place"
+              required
+            >
+              <option value="time">Time</option>
+              <option value="place">Place</option>
+            </select>
+          </div>
+            <section>
+              <div>
+                <label for="time">Enter a 2-syllable time setting.</label>
+                <input
+                  type="text"
+                  name="time"
+                  id="time"
+                  value=""
+                  onChange=""
+                  placeholder="ex. weekday, April, evening, sunset"
+                />
+              </div>
+              <div>
+                <label for="place">Enter a 1-syllable place setting.</label>
+                <input
+                  type="text"
+                  name="place"
+                  id="place"
+                  value=""
+                  onChange=""
+                  placeholder="ex. beach, tree, house, Rome"
+                  required
+                />
+              </div>
+              <div>
+                <label for="adj_2">Enter a 2-syllable adjective.</label>
+                <input
+                  type="text"
+                  name="adj_2"
+                  id="adj_2"
+                  value=""
+                  onChange=""
+                  placeholder="ex. lazy, happy, angry, rapid" 
+                  required
+                />
+              </div>
+              <div>    
+                  <label for="adj_1">Enter a 1-syllable adjective.</label>
+                <input
+                  type="text"
+                  name="adj_1"
+                  id="adj_1"
+                  value=""
+                  onChange=""
+                  placeholder="sad, bad, mean, lean" 
+                  required
+                /></div>
+              <label for="animal">Choose an animal:</label>
+              <select
+                onChange=""  
+                name="animal"
+                id="animal"
+                required
+              >
+                <option value="lion">lion</option>
+                <option value="penguin">penguin</option>
+                <option value="mouse">mouse</option>
+              </select>
+            </section>
+          
+          <div class="DayForm__buttons">
+            <button type="button" onClick={this.props.onClickCancel}>
+              Cancel
+            </button>
+            <button type="submit">Save</button>
+          </div>
+        </form>
+    </main>
+    <footer role="content-info">Footer</footer>
+  </body>
+</html>
